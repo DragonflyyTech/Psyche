@@ -35,20 +35,15 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="principal_p.jsp#pagina_abajo">Inicio</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acciones</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="Test">Test</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="diario.jsp">Diario</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="Chat.jsp">Chat</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="Calendario.jsp">Citas</a></li>
-                            </ul>
-                        </li>
-
                     </ul>
+                    <div id="mayones">
+                        <a class="btn btn-primary" href="principal_p.jsp#forms_citas_cont" style="background-color: #87CEEB; border-color: #87CEEB;">
+                            Regresar
+                        </a>
+                        <a class="btn btn-primary" href="cerrar_sesion.jsp" style="background-color: #C2504C; border-color: #C2504C;">
+                            Cerrar sesion
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -106,18 +106,23 @@ div{
     height:600px;
     box-shadow:  0px 0px 20px #D4CAC6;
 }
+
 #titulo_D{
-    border: none;
+    border-radius: 3px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
     appearance: none;
-    border-bottom: 5px;
+    border-bottom: 1px solid black;
+    /*outline: 1px solid #D4CAC6;*/
 }
 #titulo_D:focus{
-    box-shadow: none;
+    box-shadow:  0px 0px 20px #D4CAC6;
 }
 #cont-dia{
     border: none;
     appearance: none;
-    height:400px;
+    height:450px;
 }
 #cont-dia:focus{
     box-shadow: none;

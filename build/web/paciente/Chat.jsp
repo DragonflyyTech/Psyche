@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <title>Chat</title>
@@ -23,13 +23,15 @@
                 }
                 req.open('GET', 'ContChat.jsp');
                 req.send();
-                
+
             }
-            setInterval(function(){ajax();}, 500);
+            setInterval(function () {
+                ajax();
+            }, 500);
         </script>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-         
-         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     </head>
@@ -62,38 +64,29 @@
         
         %>
         <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-      <span class="navbar-brand mb-0 "><h4><%=Nombre%></h4></span>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="principal_p.jsp#pagina_abajo">Inicio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acciones</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Test</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="diario.jsp">Diario</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="Chat.jsp">Chat</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="Calendario.jsp">Citas</a></li>
-          </ul>
-        </li>
-        <!--  <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      
-      <span class="navbar-brand mb-0 "></span>-->
-        </ul>
-    </div>
-  </div>
-</nav>
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 "><h4><%=Nombre%></h4></span>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="principal_p.jsp#pagina_abajo">Inicio</a>
+                        </li>
+                    </ul>
+                    <div id="mayones">
+                        <a class="btn btn-primary" href="principal_p.jsp#forms_citas_cont" style="background-color: #87CEEB; border-color: #87CEEB;">
+                            Regresar
+                        </a>
+                        <a class="btn btn-primary" href="cerrar_sesion.jsp" style="background-color: #C2504C; border-color: #C2504C;">
+                            Cerrar sesion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="container centrado">
             <div id="caja_chat">
                 <div id="titulo" class="centrado"><h2><%=Nombre_Doc%></h2>
-                  <!--<button type="button" onclick="scrolldown();" class="btn btn-primary"><H5>bajar</H5></button>-->
+                    <!--<button type="button" onclick="scrolldown();" class="btn btn-primary"><H5>bajar</H5></button>-->
                 </div>
                 <div id="contenedormensajes" class="cacahuates p-1">
                 </div>
@@ -105,22 +98,23 @@
                         <input type="hidden" name="id_relacionDP" id="id_relacionDP">
                         <input type="hidden" name="fecha" id="fecha">
                     </div>
-                    
+
                     <script>
-                        var fecha = new Date();
-                        var Fecha = (fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear());
-                        function dafecha() {
-                        document.getElementById('Nombre').value = "<%=Nombre%>";
-                        document.getElementById('id_relacionDP').value ="<%=relacion_docpac%>" ;
-                        document.getElementById('fecha').value = Fecha.toString();
-                        };
-                        dafecha();
-                        const Chatbox = document.querySelector(".cacahuates");
-            
-                        function scrolldown(){
-                            const a = Chatbox.scrollHeight;
-                            Chatbox.scrollTop = a;
-                        }
+            var fecha = new Date();
+            var Fecha = (fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear());
+            function dafecha() {
+                document.getElementById('Nombre').value = "<%=Nombre%>";
+                document.getElementById('id_relacionDP').value = "<%=relacion_docpac%>";
+                document.getElementById('fecha').value = Fecha.toString();
+            }
+            ;
+            dafecha();
+            const Chatbox = document.querySelector(".cacahuates");
+
+            function scrolldown() {
+                const a = Chatbox.scrollHeight;
+                Chatbox.scrollTop = a;
+            }
                     </script>
                 </form>
             </div>

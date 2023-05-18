@@ -15,7 +15,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!-- css personalizado-->
-        <link href="css/ppp.css" rel="stylesheet">
+        <link href="ppp.css" rel="stylesheet">
     </head>
     <body>
         <%
@@ -67,6 +67,9 @@
                         </li>
                     </ul>
                     <div id="mayones">
+                        <a class="btn btn-primary" href="principal_p.jsp#forms_citas_cont">
+                            Regresar
+                        </a>
                         <a class="btn btn-primary" href="cerrar_sesion.jsp">
                             Cerrar sesion
                         </a>
@@ -85,8 +88,7 @@
 
         <div class="container">
 
-            <%
-                                      
+            <%                  
                         int num_pac = 0;
                     
                         String strQry2 = "select * from doctores";
@@ -109,7 +111,11 @@
             %>
             <div id="tarjeta_psicologo" class="">
                 <div id="tps1">
-                    <p><h2><%=nom%></h2></p>
+                    <div>
+                        <h2>
+                            <p><%=nom%></p>
+                        </h2>
+                    </div>
                     <div>
                         <h3>
                             <P>Cuenta con: <%=num_pac%> pacientes</p>
@@ -131,11 +137,6 @@
             }%>
 
         </div>
-
-
-
-
-
         <%
     
     }catch (Exception ex) {%>
@@ -146,8 +147,5 @@
         <%
             }
         %>
-
-
-
     </body>
 </html>

@@ -9,11 +9,12 @@ body{
 .card-title{
     font-weight: bold
 }
-.yep{
+#yep{
     display: none;
 }
 #wakawaka{
-    width: 100vw;
+    width: 500px;
+    margin-left: 50px;
 }
 html{
     scroll-behavior: smooth;
@@ -28,7 +29,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 #sis{
-    height:90vh ;
+    height:730px ;
     width:100%; 
     overflow: hidden;
     position: relative;
@@ -66,16 +67,17 @@ body::-webkit-scrollbar-thumb{
 }
 #forms_citas_cont{
     margin-top: 50px;
-    height: auto;
+}
+#forms_citas_cont{
+    height: 400px;
 }
 #forms_citas{
     width: 100%;
     height: 100%;
     box-shadow:  0px 0px 30px #D4CAC6;
     border-radius: 15px;
-    background-color:white;
- /*   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%237589d1' fill-opacity='0.46'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.46'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
-*/
+    background-color: #91A4EE;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%237589d1' fill-opacity='0.46'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.46'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 #sis{
     /* height:800px ;
@@ -299,41 +301,10 @@ button {
     border-radius: 15px;
     background-color: #EBE8E1;
     position: relative;
-    height:auto;
+    height: 70px;
     margin-bottom: 15px;
-    width: 100%;
-    float: left;
-    padding: 1%;
-    margin-bottom: 15px;
+    
 }
 #tarjeta_psicologo p{
     margin-left:10px;
-}
-#perfil{
-    width: 500px;
-    margin-left: 50px;
-}
-#mayones{
-    margin: 10px;
-}
-#img1{
-    height: 600px;
-}
-
-footer{
-    height:auto;
-    background-color:#D4CAC6;
-}
-#tostada{
-    z-index: 2;
-}
-#tps1{
-    float: left;
-}
-#btonabajo{
-    position: fixed;
-    z-index: 3;
-    left: 20px;
-    bottom: 20px;
-    transition: all 1s ease;
 }

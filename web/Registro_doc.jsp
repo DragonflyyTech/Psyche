@@ -13,7 +13,7 @@ and open the template in the editor.
         <title>Registro</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css-in/css_datos.css">
-
+        <link rel="shortcut icon" href="logo psyche.png" type="image/gif" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"

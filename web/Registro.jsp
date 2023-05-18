@@ -9,7 +9,7 @@ and open the template in the editor.
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-        
+        <link rel="shortcut icon" href="logo psyche.png" type="image/gif" />
         <title>Registro</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css-in/css_datos.css">
@@ -79,12 +79,8 @@ and open the template in the editor.
                     <table id="tablita" border="0" class="centrado">
                         <tr>
          
-                            <th><div><label>Nombre de Usuario</label>
+                            <th><div><label>Usuario</label>
                                 <input id="nomb_usuer" type="text" name="nomb_usuer" maxlength="20"  class="inouts form-control" oninput="this.value =this.value.replace(/[^a-zA-Z0-9\s]/g, '')" required/></div></th>
-                        <tr>
-                            <th><div><label>Correo Electrónico</label>
-                                <input id="email" type="email" name="email" maxlength="30"  class="inouts form-control "  required/></div></th>
-
                         </tr>
                         <tr>
                             <th><div><label ">Contraseña</label>
@@ -92,13 +88,18 @@ and open the template in the editor.
 
                         </tr>
                         <tr>
-                            <th><div><label>Alias</label>
+                            <th><div><label>Correo Electrónico</label>
+                                <input id="email" type="email" name="email" maxlength="30"  class="inouts form-control "  required/></div></th>
+
+                        </tr>
+                        <tr>
+                            <th><div><label>Nombre</label>
                                 <input id="alias" type="text" name="alias" maxlength="20"  class="inouts form-control " oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s]/g, '')" required/></div></th>
 
                         </tr>
                         <tr>
                             <th><div><label>Edad</label>
-                                <input id="brith" type="number" name="brith"  class="inouts form-control" min="15" max="90" step="1" required/></div></th>
+                                <input id="brith" type="number" name="brith"  class="inouts form-control" min="15" max="25" step="1" required/></div></th>
 
                         </tr>
                         <tr class="centrado">

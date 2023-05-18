@@ -39,7 +39,7 @@
         Base bd = new Base();
         bd.conectar();
         
-        String strQry1 = "select * from pacientes where id_pac = '" + idPac + "'";
+        String strQry1 = "select * from pacientes where id_pac = '" + idPac + "';";
         ResultSet rsDatosPer = bd.consulta(strQry1);
 
         if (rsDatosPer.next()) {
@@ -48,14 +48,11 @@
             edad = rsDatosPer.getString(5);
         }
         
-        String strQry2 = "select * from eventos";
+        String strQry2 = "select * from eventos where id_pac = '" + idPac + "';";
         ResultSet rsEv = bd.consulta(strQry2);
 
         %>
-
-       
-        
-         <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 "><h4 style="font-weight: bold"><%=Nombre%></h4></span>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,12 +60,12 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../principal_p.jsp">Inicio</a>
                         </li>
-                        
-                        <li class="nav-item">
-                        </li>
                     </ul>
                     <div id="mayones">
-                        <a class="btn btn-primary" href="../cerrar_sesion.jsp">
+                        <a class="btn btn-primary" href="../principal_p.jsp#forms_citas_cont" style="background-color: #87CEEB; border-color: #87CEEB;">
+                            Regresar
+                        </a>
+                        <a class="btn btn-primary" href="../cerrar_sesion.jsp" style="background-color: #C2504C; border-color: #C2504C;">
                             Cerrar sesion
                         </a>
                     </div>

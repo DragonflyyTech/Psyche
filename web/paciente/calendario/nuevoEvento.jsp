@@ -4,7 +4,11 @@
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.util.Calendar" %>
+
 <%
+   
+    String idDoc = request.getParameter("iddoc");
+    String idPac =  request.getParameter("idpac");
     String evento = request.getParameter("evento");
     String f_inicio = request.getParameter("fecha_inicio");
     String f_fin = request.getParameter("fecha_fin");
@@ -24,9 +28,10 @@
 
     Base bd = new Base();
     bd.conectar();
-    String strQry = "insert into eventos (evento,fecha_inicio,fecha_fin,color_evento)VALUES ('"+evento+"','"+fecha_inicio+"','"+fecha_fin+"','"+color_evento+"')";
+    String strQry = "insert into eventos (evento,fecha_inicio,fecha_fin,color_evento,id_pac,id_doc)VALUES ('"+evento+"','"+fecha_inicio+"','"+fecha_fin+"','"+color_evento+"','"+idPac+"','"+idDoc+"')";
     int resultadoInsert = bd.insertar(strQry);
     out.print("Checar resultado de la base " + resultadoInsert);
     response.sendRedirect("index.jsp");
+    
 
 %>
