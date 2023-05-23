@@ -146,10 +146,10 @@
                                         <div class="col-6">
                                             <div class="card" style="width:110%;">
                                                 <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
-                                                    <h4 class="card-title" >Test</h4>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Realizar cuestionarios</h6>
-                                                    <p class="card-text">Desde cuestionarios para saber si cuenta con algun problema emocional, hasta un prediagnostico.</p>
-                                                    <button class="custom-btn btn-5" id="btntest"  onclick="location.href = 'Test.jsp'"><h4>Iniciar tests</h4></button>
+                                                    <h4 class="card-title" >Test e informacion</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Apartado de informarse y test</h6>
+                                                    <p class="card-text">Desde cuestionarios que pueden ayudar a su psicologo e informacion sobre transtornos emocionales, hasta un prediagnostico.</p>
+                                                    <button class="custom-btn btn-5" id="btntest"  onclick="location.href = 'Test.jsp'"><h4>Revisar</h4></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -158,7 +158,7 @@
                                                 <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
                                                     <h4 class="card-title">Diario</h4>
                                                     <h6 class="card-subtitle mb-2 text-muted">Llevar una bitácora</h6>
-                                                    <p class="card-text">Puedes registrar todos tus dias y como te has sentido, para que su doctor le de seguimiento.</p>
+                                                    <p class="card-text">Puedes registrar todos tus dias y como te has sentido durante estos, para que su doctor le de seguimiento de el estado emocional.</p>
                                                     <button class="custom-btn btn-15" id="btndiario" onclick="location.href = 'diario.jsp'"><h4>Escribir!</h4></button>
                                                 </div>
                                             </div>

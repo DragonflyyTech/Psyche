@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Diario</title>
         <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1787/1787077.png" type="image/gif" />
-        <link href="css_diario.css" rel="stylesheet">
+        <link href="css/css_diario.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,7 +110,10 @@
                                 </div>
                             </div>
                             <div class="">
-                                <textarea maxlength="2000" class="form-control" id="cont-dia" name="cont-dia" placeholder="El día de hoy..." rows="3"></textarea>
+                                <textarea maxlength="1500" class="form-control cont-dia"  id="cont-dia1" name="cont-dia1" placeholder="El día de hoy fue..." rows="3"></textarea>
+                            </div>
+                            <div class="">
+                                <textarea maxlength="500" class="form-control cont-dia" id="cont-dia2" name="cont-dia2" placeholder="Algo por lo que puedo agradecer hoy fue..." rows="3"></textarea>
                             </div>
                             <input type="hidden" name="Fecha" id="fechita">
                         </div>

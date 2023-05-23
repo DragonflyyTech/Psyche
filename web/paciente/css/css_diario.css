@@ -120,10 +120,15 @@ div{
     /*box-shadow:  0px 0px 20px #D4CAC6;*/
     box-shadow: none;
 }
-#cont-dia{
+.cont-dia{
     border: none;
     appearance: none;
-    height:450px;
+    height:225px;
+    box-shadow:  0px 0px 3px #877e7b;
+    margin-bottom: 6px;
+}
+.cont-dia:focus{
+    box-shadow: none;
 }
 #cont-dia:focus{
     box-shadow: none;

@@ -24,8 +24,6 @@
                     String varpass = request.getParameter("pass");
                     String varalias = request.getParameter("alias");
                     String varbrith = request.getParameter("brith");
-                    
-                    if (!"".equals(varnomb_usuer) && !"".equals(varemail) && !"".equals(varpass)&& !varalias.equals("") &&  !varbrith.equals("")) {
                         //se valida que tengan datos los campos
                         //guardamos en la base de datos
                         Base bd = new Base();
@@ -43,7 +41,7 @@
                         } catch (Exception ex) {
                             out.print("Los datos no se ingresaron correctamente, porfavor corriga el codigo ");
                         }
-                    }
+                    
 
                 %>
                 <br>

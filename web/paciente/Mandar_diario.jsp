@@ -21,7 +21,9 @@
         }
         String titulo_diar = request.getParameter("titulo_D");
         String fecha = request.getParameter("Fecha");
-        String cont_diario = request.getParameter("cont-dia");
+        String cont_dia1 = request.getParameter("cont-dia1");
+        String cont_dia2 = request.getParameter("cont-dia2");
+        String cont_diario = cont_dia1 +", "+ cont_dia2;
         String emocion_diar =request.getParameter("emocion");
 
         Base bd = new Base();
